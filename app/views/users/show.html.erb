@@ -1,6 +1,7 @@
 <h1>Welcome, <%= @user.email %></h1>
 
 <%= form_for @user, url: bookmark_files_path, html: { method: "POST" } do |form| %>
+  <%= form.hidden_field :user_id, value: @user.id %>
   <%= form.file_field :bookmark_file %>
   <%= submit_tag "Upload File" %>
 <% end %>

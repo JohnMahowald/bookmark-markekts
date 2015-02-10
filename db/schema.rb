@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150210064907) do
+ActiveRecord::Schema.define(version: 20150210075511) do
+
+  create_table "bookmark_files", force: true do |t|
+    t.string   "bookmark_file_file_name"
+    t.string   "bookmark_file_content_type"
+    t.integer  "bookmark_file_file_size"
+    t.datetime "bookmark_file_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "bookmarks", force: true do |t|
     t.string   "title"

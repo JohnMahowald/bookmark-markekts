@@ -40,3 +40,10 @@ gem 'spring',        group: :development
 
 gem "paperclip"
 gem 'aws-sdk', '~> 1.5.7'
+
+group :development do
+  gem "binding_of_caller"
+  gem "better_errors"
+  gem "byebug"
+  gem "pry"
+end
