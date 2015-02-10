@@ -1,0 +1,7 @@
+<h1>File Upload</h1>
+
+<% form_tag({action: :upload}) do %>
+<p><label for="upload_file">Select File</label> : 
+  <%= file_field_tag 'upload' %></p>
+  <%= submit_tag "Upload" %>
+<% end %>
